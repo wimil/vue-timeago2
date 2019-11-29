@@ -1,4 +1,4 @@
-# vue-timeago2 [![NPM version](https://img.shields.io/npm/v/vue-timeago2.svg)](https://npmjs.com/package/vue-timeago2) [![NPM downloads](https://img.shields.io/npm/dm/vue-timeago2.svg)](https://npmjs.com/package/vue-timeago2) 
+# vue-timeago2 [![NPM version](https://img.shields.io/npm/v/vue-timeago2.svg)](https://npmjs.com/package/vue-timeago2) [![NPM downloads](https://img.shields.io/npm/dm/vue-timeago2.svg)](https://npmjs.com/package/vue-timeago2)
 
 > A timeago component Vue.js
 
@@ -10,22 +10,21 @@ yarn add vue-timeago2
 npm i vue-timeago2
 ```
 
-
 ## Usage
 
 ```js
-import VueTimeago2 from 'vue-timeago2'
+import VueTimeago2 from "vue-timeago2";
 
 Vue.use(VueTimeago2, {
-  name: 'Timeago', // Component name, `Timeago` by default
-  locale: 'en', // Default locale
+  name: "Timeago", // Component name, `Timeago` by default
+  locale: "en", // Default locale
   // We use `date-fns` under the hood
   // So you can use all locales from it
   locales: {
-    'zh-CN': require('date-fns/locale/zh_cn/index'),
-    es: require('date-fns/locale/es/index')
+    "zh-CN": require("date-fns/locale/zh_cn/index"),
+    es: require("date-fns/locale/es/index")
   }
-})
+});
 ```
 
 Then in your lovely component:
@@ -47,14 +46,12 @@ Then in your lovely component:
 <!-- custom locale -->
 <!-- use a different locale instead of the global config -->
 <timeago :datetime="time" locale="zh-CN"></timeago>
-
-
 ```
 
 ## Plugin options
 
 ```js
-Vue.use(VueTimeago, pluginOptions)
+Vue.use(VueTimeago, pluginOptions);
 ```
 
 ### locales
@@ -75,7 +72,7 @@ The default locale name.
 
 A `converter` that formats regular dates in `xxx ago`, `in xxx` or `xxx days` style.
 
-We have two [converters](https://github.com/wimil/vue-timeago2/blob/master/src/converts.js) that format time:  [toNow](https://date-fns.org/v2.8.1/docs/formatDistance) and [Strict](https://date-fns.org/v2.8.1/docs/formatDistanceStrict). usando [date-fns](https://date-fns.org/v2.8.1/docs/) 2.8.1
+We have two [converters](https://github.com/wimil/vue-timeago2/blob/master/src/converts.js) that format time: [toNow](https://date-fns.org/v2.8.1/docs/formatDistance) and [Strict](https://date-fns.org/v2.8.1/docs/formatDistanceStrict). usando [date-fns](https://date-fns.org/v2.8.1/docs/) 2.8.1
 
 ### converterOptions
 
@@ -118,6 +115,7 @@ Just like the `locale` option in the plugin options, but this could override the
 Just like the `converter` option in the plugin options, but this could override the global one.
 
 ### typeConvert
+
 - **default**: Return the distance between the given dates in words.
 - **strict**: Return the distance between the given dates in words, using strict units. This is like `formatDistance`, but does not use helpers like 'almost', 'over', 'less than' and the like.`
 
@@ -131,15 +129,15 @@ Just like the `converterOptions` option in the plugin options, but this could ov
 
 ```js
 Vue.use(VueTimeago, {
-  locale: 'en',
+  locale: "en",
   locales: {
-    'zh-CN': require('date-fns/locale/zh_cn/index')
+    "zh-CN": require("date-fns/locale/zh_cn/index")
   }
-})
+});
 ```
 
 In your components you can use `this.$timeago.locale` to access the global locale, in this case it's `en`, the `<timeago>` component will get updated when you set it to another valid locale, e.g. `this.$timeago.locale = 'zh-CN'`.
 
 ## License
 
-MIT © [EGOIST](https://github.com/egoist)
+MIT © [Wimil](https://github.com/wimil)

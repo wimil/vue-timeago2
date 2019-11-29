@@ -23,7 +23,7 @@ Vue.use(VueTimeago2, {
   // So you can use all locales from it
   locales: {
     'zh-CN': require('date-fns/locale/zh_cn/index'),
-    es: require('date-fns/locale/ja/index')
+    es: require('date-fns/locale/es/index')
   }
 })
 ```

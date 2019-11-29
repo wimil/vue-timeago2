@@ -119,7 +119,7 @@ Just like the `converter` option in the plugin options, but this could override 
 
 ### typeConvert
 - **default**: Return the distance between the given dates in words.
-- ***strict**: Return the distance between the given dates in words, using strict units. This is like `formatDistance`, but does not use helpers like 'almost', 'over', 'less than' and the like.`
+- **strict**: Return the distance between the given dates in words, using strict units. This is like `formatDistance`, but does not use helpers like 'almost', 'over', 'less than' and the like.`
 
 ### converterOptions
 

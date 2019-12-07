@@ -1,11 +1,11 @@
 {
   "name": "vue-timeago2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A timeago filter for Vue using date-fns.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/wimil/vue-timeago",
+  "repository": "https://github.com/wimil/vue-timeago2",
   "author": {
     "name": "Wimil",
     "email": "rldev25@gmail.com",
